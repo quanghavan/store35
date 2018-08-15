@@ -20,15 +20,15 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        Schema::defaultStringLength(191);
-        $category = Category::all();
-        $product_sell = Product::has('orderDetails')->get();
-        View::share(compact(
-            [
-                'category', 
-                'product_sell',
-            ]
-        ));
+        // Schema::defaultStringLength(191);
+        // $category = Category::all();
+        // $product_sell = Product::has('orderDetails')->get();
+        // View::share(compact(
+        //     [
+        //         'category', 
+        //         'product_sell',
+        //     ]
+        // ));
     }
 
     /**
